@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshil Modi — Portfolio</title>
+  <meta name="description" content="Darshil Modi — Full Stack Developer from Ankleshwar, India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <ul class="nav-list" id="navList">
+      <li><a href="#about" class="nl active" data-sec="about">About</a></li>
+      <li><a href="#skills" class="nl" data-sec="skills">Skills</a></li>
+      <li><a href="#projects" class="nl" data-sec="projects">Projects</a></li>
+      <li><a href="#upcoming" class="nl" data-sec="upcoming">Upcoming Projects</a></li>
+      <li><a href="#experience" class="nl" data-sec="experience">Experience</a></li>
+      <li><a href="#contact" class="nl" data-sec="contact">Contact</a></li>
+      <li><a href="#blog" class="nl" data-sec="blog">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="ham" id="ham" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mob-drawer" id="mobDrawer">
+    <ul>
+      <li><a href="#about" class="mob-nl">About</a></li>
+      <li><a href="#skills" class="mob-nl">Skills</a></li>
+      <li><a href="#projects" class="mob-nl">Projects</a></li>
+      <li><a href="#upcoming" class="mob-nl">Upcoming Projects</a></li>
+      <li><a href="#experience" class="mob-nl">Experience</a></li>
+      <li><a href="#contact" class="mob-nl">Contact</a></li>
+      <li><a href="#blog" class="mob-nl">Blog</a></li>
+    </ul>
+  </div>
+
+  <!-- ======= HERO / HOME (About anchor) ======= -->
+  <section class="hero" id="about">
+    <div class="hero-center">
+
+      <!-- Profile Photo -->
+      <div class="profile-wrap">
+        <div class="profile-ring"></div>
+        <div class="profile-photo">
+          <span class="initials">DM</span>
+        </div>
+      </div>
+
+      <!-- Name -->
+      <h1 class="name">DARSHIL MODI</h1>
+
+      <!-- Role & Location row -->
+      <div class="meta-row">
+        <span class="role">
+          <span class="role-dot"></span>
+          Full Stack Dev
+        </span>
+        <span class="location">
+          <svg class="pin" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+          Ankleshwar, India
+        </span>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Bio -->
+      <p class="bio">
+        A technology enthusiast passionate about blending full-stack web development and problem-solving to create
+        impactful solutions. Skilled in working with React, Node.js, MongoDB, and cloud platforms to build efficient,
+        scalable, and modern applications. Continuously improving expertise by building real-world projects and
+        sharpening problem-solving abilities.
+      </p>
+
+      <!-- Buttons -->
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-outline" id="btn-work">See My Work</a>
+        <a href="#contact" class="btn btn-solid" id="btn-contact">Get In Touch</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub" class="soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter / X" class="soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="https://dev.to" target="_blank" aria-label="Dev.to" class="soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.826 10.083a.784.784 0 00-.468-.175h-.701v4.198h.701a.786.786 0 00.469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525zM19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48C3.002 20.212 3.791 21 4.764 21h14.473C20.208 21 20.998 20.212 21 19.24V4.76C20.998 3.787 20.208 3 19.236 3zM8.695 14.198a1.97 1.97 0 01-1.999 1.962H5.141V7.84H6.69a1.97 1.97 0 011.999 1.963v4.395zm4.09-4.583H10.9v1.668h1.886v1.63H10.9v1.668h1.885v1.631h-2.507a.955.955 0 01-.956-.953V8.793c0-.52.428-.952.956-.952h2.507v1.774zm4.967 4.087c0 .85-.696 1.542-1.547 1.542-.614 0-1.176-.37-1.426-.944l-1.068-3.883v3.756h-1.638V7.84h1.638l1.3 4.719V7.84h1.638c.855 0 1.548.693 1.548 1.543v4.319z" />
+          </svg>
+        </a>
+        <a href="https://medium.com" target="_blank" aria-label="Medium" class="soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+          </svg>
+        </a>
+        <a href="mailto:darshilmodi@example.com" aria-label="Email" class="soc-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="section dark-alt" id="skills">
+    <div class="container">
+      <p class="sec-tag">What I work with</p>
+      <h2 class="sec-title">Skills & Technologies</h2>
+      <div class="skills-grid-clean">
+        <div class="scard"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+        <div class="scard"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        <div class="scard"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+        <div class="scard"><i class="devicon-react-original colored"></i><span>React</span></div>
+        <div class="scard"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="scard"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        <div class="scard"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+        <div class="scard"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+        <div class="scard"><i class="devicon-spring-original colored"></i><span>Spring Boot</span></div>
+        <div class="scard"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+        <div class="scard"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="scard"><i class="devicon-github-original"></i><span>GitHub</span></div>
+        <div class="scard"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+        <div class="scard"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="sec-tag">Open Source</p>
+      <h2 class="sec-title">My open source projects and contributions</h2>
+      <div class="projects-grid">
+
+        <article class="git-card">
+          <div class="git-top">
+            <h3>Medora Health Platform</h3>
+            <div class="git-links">
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <p>A comprehensive healthcare ecosystem featuring AI-powered skin cancer diagnostics, secure doctor-patient portals, and a seamless appointment booking system.</p>
+          <div class="git-tags">
+            <span>Next.js</span><span>FastAPI</span><span>Neon DB</span>
+          </div>
+          <div class="git-bottom">
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 0</div>
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><path d="M12 12v3"></path></svg> 0</div>
+          </div>
+        </article>
+
+        <article class="git-card">
+          <div class="git-top">
+            <h3>Zaika Palace</h3>
+            <div class="git-links">
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <p>A premium full-stack Indian restaurant platform with dynamic menu management, online table reservations, and smooth scroll animations.</p>
+          <div class="git-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="git-bottom">
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 0</div>
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><path d="M12 12v3"></path></svg> 0</div>
+          </div>
+        </article>
+
+        <article class="git-card">
+          <div class="git-top">
+            <h3>Skin AI Scanner</h3>
+            <div class="git-links">
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <p>A deep learning application that analyzes skin images to detect potential lesions and classify them with high accuracy using TensorFlow.</p>
+          <div class="git-tags">
+            <span>Python</span><span>TensorFlow</span><span>FastAPI</span>
+          </div>
+          <div class="git-bottom">
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 0</div>
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><path d="M12 12v3"></path></svg> 0</div>
+          </div>
+        </article>
+
+        <article class="git-card">
+          <div class="git-top">
+            <h3>Travel Explorers</h3>
+            <div class="git-links">
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <p>A visually stunning travel agency website featuring immersive imagery, scroll-triggered animations, and a fully responsive layout.</p>
+          <div class="git-tags">
+            <span>React</span><span>Vite</span><span>CSS3</span>
+          </div>
+          <div class="git-bottom">
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 0</div>
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><path d="M12 12v3"></path></svg> 0</div>
+          </div>
+        </article>
+
+        <article class="git-card">
+          <div class="git-top">
+            <h3>Food Recipe Hub</h3>
+            <div class="git-links">
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <p>A comprehensive recipe discovery platform with search functionality, category filtering, and interactive recipe detail pages.</p>
+          <div class="git-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="git-bottom">
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 0</div>
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><path d="M12 12v3"></path></svg> 0</div>
+          </div>
+        </article>
+
+        <article class="git-card">
+          <div class="git-top">
+            <h3>AI Chat Assistant</h3>
+            <div class="git-links">
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <p>An intelligent conversational agent built with OpenAI's GPT models, featuring context retention and markdown support.</p>
+          <div class="git-tags">
+            <span>Python</span><span>OpenAI</span><span>React</span>
+          </div>
+          <div class="git-bottom">
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 0</div>
+            <div class="git-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><path d="M12 12v3"></path></svg> 0</div>
+          </div>
+        </article>      </div>
+    </div>
+  </section>
+
+  <!-- ======= UPCOMING PROJECTS ======= -->
+  <section class="section dark-alt" id="upcoming">
+    <div class="container">
+      <p class="sec-tag">Coming Soon</p>
+      <h2 class="sec-title">Upcoming Projects</h2>
+      <div class="upcoming-grid">
+
+        <div class="up-card">
+          <div class="up-status">🔨 In Progress</div>
+          <h3>E-Commerce Platform</h3>
+          <p>A full-featured online store with cart, payments via Razorpay, admin dashboard, and real-time inventory
+            management.</p>
+          <div class="up-stack"><span>Next.js</span><span>Stripe</span><span>PostgreSQL</span></div>
+        </div>
+
+        <div class="up-card">
+          <div class="up-status">🧠 Planning</div>
+          <h3>AI Resume Builder</h3>
+          <p>Smart resume generator powered by GPT that tailors your CV for specific job descriptions with ATS
+            optimization.</p>
+          <div class="up-stack"><span>React</span><span>OpenAI</span><span>Node.js</span></div>
+        </div>
+
+        <div class="up-card">
+          <div class="up-status">💡 Idea</div>
+          <h3>DevCollab — Real-time IDE</h3>
+          <p>A collaborative coding environment with real-time editing, video call, and AI pair-programming assistant
+            built in.</p>
+          <div class="up-stack"><span>WebSockets</span><span>Monaco</span><span>WebRTC</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE ======= -->
+  <section class="section" id="experience">
+    <div class="container narrow">
+      <p class="sec-tag">My Journey</p>
+      <h2 class="sec-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-top">
+              <h3>Full Stack Developer</h3>
+              <span class="tl-date">2025 — Present</span>
+            </div>
+            <div class="tl-company">Freelance</div>
+            <p>Building end-to-end web applications for clients — from UI/UX design to deployment. Delivered healthcare,
+              restaurant, and AI-powered platforms.</p>
+            <div class="tl-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>AI</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-top">
+              <h3>Web Development Intern</h3>
+              <span class="tl-date">2024 — 2025</span>
+            </div>
+            <div class="tl-company">Tech Startup · Ankleshwar</div>
+            <p>Assisted in building responsive front-end interfaces and REST APIs. Gained hands-on experience with agile
+              workflows and code reviews.</p>
+            <div class="tl-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Express</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-top">
+              <h3>Industrial Trainee</h3>
+              <span class="tl-date">May 2025 (15 Days)</span>
+            </div>
+            <div class="tl-company">UPL Ltd · Ankleshwar</div>
+            <p>Completed a short-term industrial training at UPL Ltd, gaining exposure to enterprise-level IT
+              infrastructure, internal systems, and professional corporate workflows.</p>
+            <div class="tl-tags"><span>Industrial Training</span><span>Enterprise IT</span><span>Corporate</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-top">
+              <h3>Computer Science Student</h3>
+              <span class="tl-date">2023 — 2027</span>
+            </div>
+            <div class="tl-company">University · Gujarat, India</div>
+            <p>Studying core CS fundamentals — algorithms, data structures, OS, and databases. Complementing academics
+              with real-world projects.</p>
+            <div class="tl-tags"><span>DSA</span><span>DBMS</span><span>OS</span><span>Networking</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="section dark-alt" id="contact">
+    <div class="container narrow">
+      <p class="sec-tag">Let's talk</p>
+      <h2 class="sec-title">Get In Touch</h2>
+      <p class="contact-sub">Have a project in mind or just want to say hi? My inbox is open.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="fgroup">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="fgroup">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="fgroup">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Hello Darshil, I wanted to..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid" id="submitBtn">Send Message →</button>
+        <div class="success-msg" id="successMsg">✅ Message sent! I'll reply soon.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= BLOG ======= -->
+  <section class="section dark-alt" id="blog">
+    <div class="container">
+      <p class="sec-tag">My Writing</p>
+      <h2 class="sec-title">Blog</h2>
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-top">
+            <svg class="blog-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span class="blog-date-text">April 10, 2026</span>
+          </div>
+          <div class="blog-img-wrap">
+            <img src="blog1.png" alt="Building Medora Healthcare" />
+          </div>
+          <h3>Building Medora: A Modern Healthcare Dashboard</h3>
+          <p>Exploring the architecture behind a comprehensive healthcare platform, from secure doctor-patient portals to AI-assisted diagnostics.</p>
+          <div class="blog-bottom">
+            <div class="blog-tags">
+              <span>Next.js</span><span>Neon DB</span><span>Healthcare</span>
+            </div>
+            <a href="#" class="blog-arrow" aria-label="Read More">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-top">
+            <svg class="blog-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span class="blog-date-text">April 15, 2026</span>
+          </div>
+          <div class="blog-img-wrap">
+            <img src="blog2.png" alt="Skin Cancer Detection AI" />
+          </div>
+          <h3>Early Detection: AI for Skin Cancer Screening</h3>
+          <p>A technical breakdown of training deep learning models to accurately classify skin lesions and assist dermatologists in early detection.</p>
+          <div class="blog-bottom">
+            <div class="blog-tags">
+              <span>AI</span><span>TensorFlow</span><span>Dermatology</span>
+            </div>
+            <a href="#" class="blog-arrow" aria-label="Read More">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-top">
+            <svg class="blog-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span class="blog-date-text">May 12, 2025</span>
+          </div>
+          <div class="blog-img-wrap">
+            <img src="blog3.png" alt="Industrial Training Experience" />
+          </div>
+          <h3>Corporate Tech: My Training at UPL Ltd</h3>
+          <p>Reflecting on my 15-day industrial training stint at UPL Ltd, gaining insights into enterprise-level IT infrastructure and professional workflows.</p>
+          <div class="blog-bottom">
+            <div class="blog-tags">
+              <span>Enterprise IT</span><span>UPL Ltd</span><span>Corporate</span>
+            </div>
+            <a href="#" class="blog-arrow" aria-label="Read More">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <p>Built by <strong>Darshil Modi</strong> · 2026 · Ankleshwar, India 🇮🇳</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
