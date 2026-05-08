@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 
-Access the application at `http://localhost:3000`.
+Access the application at [http://localhost:3000](http://localhost:3000).
 
 ## 📁 Project Structure
 
@@ -66,6 +66,7 @@ Darshil-Modi-Portfolio/
 
 I am open to software engineering roles and collaborative projects.
 
+- **Email:** [darshilmodi2607@gmail.com](mailto:darshilmodi2607@gmail.com)
 - **LinkedIn:** [linkedin.com/in/darshilmodi](https://linkedin.com/in/darshilmodi)
 - **GitHub:** [github.com/Darshilmodi05](https://github.com/Darshilmodi05)
 
