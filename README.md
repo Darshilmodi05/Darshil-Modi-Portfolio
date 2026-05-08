@@ -10,6 +10,8 @@
 
 Welcome to the source code repository for my professional portfolio website. This application serves as a comprehensive digital resume, highlighting my experience, technical capabilities, and software engineering projects. It is architected to deliver a high-performance, accessible, and visually engaging user experience.
 
+🌐 **Live Application:** [darshil-modi.vercel.app](https://darshil-modi.vercel.app)
+
 ## 🛠️ Technical Architecture
 
 ### Core Stack
